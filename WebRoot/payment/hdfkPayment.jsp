@@ -1,0 +1,24 @@
+<%@ page contentType="text/html;charset=gb2312"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+<html>
+	<head> 
+    	<title>支付订单</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+  	</head>
+    <body>
+    	<center>
+    	<div style="background:url(images/payfor_bk.jpg);width:720;height:583;">
+    		<form action="" method="post">
+    		<table border="1" bordercolor="lightgrey" bgcolor="#F9F9F9" width="600" height="200" rules="none" cellpadding="0" cellspacing="0" style="margin-top:230">
+				 <tr>
+				 	<td style="padding-left:100">
+				 		订单号：<font color="red">${param.orderid}</font>，您需要支付：<font color="red">￥${param.amount}</font><br><br>
+				 		您选择的是货到付款支付方式，按照您指定的时间，我们将按时送货到门，请准备好Money！^_^
+				 	</td>
+				 </tr>
+    		</table>
+    		</form>
+    	</div>
+    	</center>    	
+  	</body>
+</html>
